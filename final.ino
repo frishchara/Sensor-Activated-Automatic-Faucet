@@ -25,8 +25,8 @@ unsigned long lastFlowRateCheck = 0;
 // 創建超聲波距離感測器對象
 UltraSonicDistanceSensor distanceSensor(PIN_TRIG, PIN_ECHO);
 // WiFi AP ssid / password
-static const char* ssid = "3715";  // Change this to your WiFi SSID
-static const char* password = "12345678";  // Change this to your WiFi password
+static const char* ssid = "your-ssid";  // Change this to your WiFi SSID
+static const char* password = "your-pass";  // Change this to your WiFi password
 
 // MQTT Broker info
 static char *server = "140.127.196.39";
@@ -41,8 +41,8 @@ int port = 18883;
 
 // MQTT Client info
 static char *client_id = "nine_11"; 
-const char* mqtt_user = "iot2024";
-const char* mqtt_password = "isuCSIE2024#";
+const char* mqtt_user = "your-mqtt-user";
+const char* mqtt_password = "your-mqtt-pass";
 // Clients for MQTT
 WiFiClient wifiClient;
 PubSubClient client(wifiClient);
